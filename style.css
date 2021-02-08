@@ -1,0 +1,143 @@
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-family: ;
+}
+.container .outer {
+  display: flex;
+  background: #f2f2f2;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  transition: all 0.4s ease;
+}
+input[type="checkbox"]:checked ~ .outer {
+  background: #092c3e;
+}
+.outer .content {
+  position: relative;
+  width: 550px;
+  height: 250px;
+  background: #fff;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.77);
+}
+input[type="checkbox"]:checked ~ .outer .content {
+  background: #092c3e;
+}
+.content .toggle {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  background: #092c3e;
+  width: 45px;
+  height: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+input[type="checkbox"]:checked ~ .outer .toggle {
+  background: white;
+}
+.toggle .circle {
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 50%;
+  margin-left: 3px;
+  transition: all 0.3s ease;
+}
+input[type="checkbox"]:checked ~ .outer .circle {
+  margin-left: 27px;
+  background: #092c3e;
+}
+.content .image-box {
+  width: 170px;
+  height: 200px;
+  border-radius: 20px;
+  background: #092c3e;
+  padding: 5px;
+}
+.content .image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 1px solid #fff;
+}
+input[type="checkbox"]:checked ~ .outer img {
+  border: transparent;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.756);
+}
+.content .details {
+  width: 400px;
+  padding: 15px;
+  color: #092c3e;
+}
+input[type="checkbox"]:checked ~ .outer .details {
+  color: #fff;
+}
+.details .info h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.details .info h3 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.details .info p {
+  font-size: 13px;
+  font-weight: 500;
+}
+.details .info button {
+  border: none;
+  outline: none;
+  background: #092c3e;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.details .info button:hover {
+  transform: scale(0.96);
+}
+input[type="checkbox"]:checked ~ .outer button {
+  background: white;
+  color: #092c3e;
+}
+.details .social {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  display: inline-flex;
+}
+
+.details .social i {
+  margin: 0 5px;
+  font-size: 1.2rem;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+input[type="checkbox"]:checked ~ .outer .social i {
+  opacity: 1;
+}
+.details .social i:hover {
+  opacity: 1;
+  transform: scale(0.95);
+}
+#switch {
+  display: none;
+}
